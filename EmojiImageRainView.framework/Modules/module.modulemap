@@ -1,0 +1,4 @@
+framework module EmojiImageRainView {
+  header "EmojiImageRainView-Swift.h"
+  requires objc
+}
