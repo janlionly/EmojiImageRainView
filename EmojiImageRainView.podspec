@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EmojiImageRainView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Emoji string or custom image falling like raining on view.'
   
   s.social_media_url = 'https://twitter.com/janlionly'
