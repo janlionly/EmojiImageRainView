@@ -15,11 +15,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         let rainView = EmojiImageRainView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-//        rainView.image = UIImage(named: "your_image_name")
-        rainView.emojiString = "🤪"
-        rainView.raindropSize = CGSize(width: 30, height: 30)
+        rainView.image = UIImage(named: "snowflake") // or: rainView.emojiString = "🤪"
+        rainView.raindropSize = CGSize(width: 40, height: 40)
         rainView.isUserInteractionEnabled = false
-        rainView.rainAmount = .lot
+        rainView.rainInterval = 0.4 // or: rainView.rainAmount = .normal
         rainView.rainDuration = 4
         view.addSubview(rainView)
         rainView.startRainning()

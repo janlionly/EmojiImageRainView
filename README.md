@@ -6,6 +6,7 @@
 ![Swift](https://img.shields.io/badge/%20in-swift%205.1-orange.svg)
 
 ![EmojiImageRainView demo image](https://media.giphy.com/media/JT7z84XDHrf2M0ab65/giphy.gif)
+![EmojiImageRainView demo image](https://media.giphy.com/media/YR83XsYS95S5rQcH4u/giphy.gif)
 
 
 ## Description
@@ -21,19 +22,16 @@ pod 'EmojiImageRainView'
 ```
 
 ## Usage
-just one line code to play svga:
-
 ```swift
 // for example in a controller:
-        let rainView = EmojiImageRainView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
-//        rainView.image = UIImage(named: "your_image_name")
-        rainView.emojiString = "🤪"
-        rainView.raindropSize = CGSize(width: 30, height: 30)
-        rainView.isUserInteractionEnabled = false
-        rainView.rainAmount = .lot
-        rainView.rainDuration = 4
-        view.addSubview(rainView)
-        rainView.startRainning()
+let rainView = EmojiImageRainView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
+rainView.image = UIImage(named: "snowflake") // or: rainView.emojiString = "🤪"
+rainView.raindropSize = CGSize(width: 40, height: 40)
+rainView.isUserInteractionEnabled = false
+rainView.rainInterval = 0.4 // or: rainView.rainAmount = .normal
+rainView.rainDuration = 4
+view.addSubview(rainView)
+rainView.startRainning()
 
 ```
 
