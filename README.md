@@ -28,7 +28,7 @@ let rainView = EmojiImageRainView(frame: CGRect(x: 0, y: 0, width: view.frame.wi
 rainView.image = UIImage(named: "snowflake") // or: rainView.emojiString = "🤪"
 rainView.raindropSize = CGSize(width: 40, height: 40)
 rainView.isUserInteractionEnabled = false
-rainView.rainInterval = 0.4 // or: rainView.rainAmount = .normal
+rainView.raindropInterval = 0.4 // or: rainView.rainAmount = .normal
 rainView.rainDuration = 4
 view.addSubview(rainView)
 rainView.startRainning()
