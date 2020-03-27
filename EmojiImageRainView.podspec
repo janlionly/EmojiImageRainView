@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'EmojiImageRainView'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'Emoji string or custom image falling like raining on view.'
   
   s.social_media_url = 'https://twitter.com/janlionly'
@@ -15,6 +15,5 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = '*.framework'
   s.frameworks = 'UIKit'
 
-  s.swift_versions = ['4.2', '5.0', '5.1']
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.2' }
 end
